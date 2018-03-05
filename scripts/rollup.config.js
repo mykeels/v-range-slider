@@ -28,13 +28,13 @@ const banner = `/*!
  * ${meta.homepage}/blob/master/LICENSE
  */`
 
-const name = 'VueRangeSlider'
+const name = 'VRangeSlider'
 
 const plugins = [
   vue({
     compileTemplate: true,
     css: !process.env.NODE_ENV && (styles => {
-      const out = ext => path.resolve(__dirname, '../dist/vue-range-slider.' + ext)
+      const out = ext => path.resolve(__dirname, '../dist/v-range-slider.' + ext)
 
       // save as scss
       fs.writeFile(out('scss'), styles, error => {

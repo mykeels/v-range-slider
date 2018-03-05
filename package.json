@@ -10,15 +10,15 @@
     "Vue"
   ],
   "license": "MIT",
-  "main": "dist/vue-range-slider.cjs.js",
+  "main": "dist/v-range-slider.cjs.js",
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/mykeels/vue-range-slider",
-  "bugs": "https://github.com/mykeels/vue-range-slider/issues",
+  "homepage": "https://github.com/mykeels/v-range-slider",
+  "bugs": "https://github.com/mykeels/v-range-slider/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mykeels/vue-range-slider.git"
+    "url": "https://github.com/mykeels/v-range-slider.git"
   },
   "scripts": {
     "prepublishOnly": "npm run release",
@@ -26,12 +26,12 @@
     "dev": "run-p watch:cjs watch:example",
     "dev:test": "run-p watch:test testem",
     "build": "run-p build:cjs build:dev build:prod",
-    "build:cjs": "rollup -c scripts/rollup.config.js -f cjs -o dist/vue-range-slider.cjs.js",
-    "build:dev": "cross-env NODE_ENV=development rollup -c scripts/rollup.config.js -f umd -o dist/vue-range-slider.js",
-    "build:prod": "cross-env NODE_ENV=production rollup -c scripts/rollup.config.js -f umd | uglifyjs -mc warnings=false --comments -o dist/vue-range-slider.min.js",
+    "build:cjs": "rollup -c scripts/rollup.config.js -f cjs -o dist/v-range-slider.cjs.js",
+    "build:dev": "cross-env NODE_ENV=development rollup -c scripts/rollup.config.js -f umd -o dist/v-range-slider.js",
+    "build:prod": "cross-env NODE_ENV=production rollup -c scripts/rollup.config.js -f umd | uglifyjs -mc warnings=false --comments -o dist/v-range-slider.min.js",
     "build:test": "rollup -c scripts/rollup.config.unit.js",
     "build:example": "webpack --config scripts/webpack.config.example.js",
-    "watch:cjs": "cd scripts && rollup -c -f cjs -o ../dist/vue-range-slider.cjs.js -w",
+    "watch:cjs": "cd scripts && rollup -c -f cjs -o ../dist/v-range-slider.cjs.js -w",
     "watch:test": "node scripts/test-dev.js",
     "watch:example": "webpack-dev-server --inline --hot --config scripts/webpack.config.example.js",
     "flow": "flow check",

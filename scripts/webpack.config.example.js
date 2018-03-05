@@ -20,8 +20,8 @@ module.exports = {
       'node_modules'
     ],
     alias: {
-      'vue-range-slider/dist/vue-range-slider.scss': 'vue-range-slider.scss',
-      'vue-range-slider': 'vue-range-slider.cjs.js'
+      'v-range-slider/dist/v-range-slider.scss': 'v-range-slider.scss',
+      'v-range-slider': 'v-range-slider.cjs.js'
     }
   },
   module: {

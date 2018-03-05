@@ -36,8 +36,6 @@ Import the v-range-slider component and use it in your components, such as:
 
 <script>
 import RangeSlider from 'v-range-slider'
-// you probably need to import built-in style
-import 'v-range-slider/dist/v-range-slider.css'
 
 export default {
   data () {
@@ -50,6 +48,11 @@ export default {
   }
 }
 </script>
+
+<style>
+/* in case you need to import the built-in styles */
+@import '~v-range-slider/dist/v-range-slider.css';
+</style>
 ```
 
 ### Available props
@@ -68,20 +71,6 @@ export default {
 
 - `knob` - slot for replacing knob
 - `popover` - slot for replacing popover
-
-### Overwrite Default Styles
-
-v-range-slider is built with Sass for its styling. If you want to customize v-range-slider styles, you can easily do that by configuring Sass variables. Available variables can be seen in [the component file](src/RangeSlider.vue).
-
-Example of making the slider knob larger:
-
-```sass
-// set the variable of the knob size
-$knob-size: 30px;
-
-// import the built-in v-range-slider style
-@import '~v-range-slider/dist/v-range-slider.scss';
-```
 
 ## License
 

@@ -1,8 +1,8 @@
 {
-  "name": "vue-range-slider",
-  "version": "0.3.2",
-  "author": "katashin",
-  "description": "Simple slider component of Vue.js",
+  "name": "v-range-slider",
+  "version": "0.0.1",
+  "author": "mykeels",
+  "description": "Range slider component for Vue JS",
   "keywords": [
     "slider",
     "range",
@@ -14,11 +14,11 @@
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/ktsn/vue-range-slider",
-  "bugs": "https://github.com/ktsn/vue-range-slider/issues",
+  "homepage": "https://github.com/mykeels/vue-range-slider",
+  "bugs": "https://github.com/mykeels/vue-range-slider/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ktsn/vue-range-slider.git"
+    "url": "https://github.com/mykeels/vue-range-slider.git"
   },
   "scripts": {
     "prepublishOnly": "npm run release",

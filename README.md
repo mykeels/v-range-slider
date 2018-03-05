@@ -14,28 +14,19 @@ Vue >= 2.0
 
 ## Installation
 
-### NPM
-
 ```bash
 npm install --save v-range-slider
-```
-
-### Yarn
-
-```bash
-yarn add v-range-slider
 ```
 
 ## Usage
 
 ### Basic Usage
 
-Just import v-range-slider component and use it in your components. The props are compatible with native `input[type="range"]` element, so you can use `min`, `max`, `step` etc. like native element.
+Import the v-range-slider component and use it in your components, such as:
 
 ```html
 <template>
   <range-slider
-    class="slider"
     min="10"
     max="1000"
     step="10"
@@ -59,16 +50,9 @@ export default {
   }
 }
 </script>
-
-<style>
-.slider {
-  /* overwrite slider styles */
-  width: 200px;
-}
-</style>
 ```
 
-Available props:
+### Available props
 
 - `name` - name of the slider input.
 - `value` - current value of the slider.
@@ -76,9 +60,14 @@ Available props:
 - `min` - minimum value of the slider.
 - `max` - maximum value of the slider.
 - `step` - granularity of the slider value. e.g. if this is 3, the slider value will be 3, 6, 9, ...
+- `no-calibration` - turn off calibration
+- `calibration-count` - determines how steps to split calibration into e.g. a min of 0 and max of 10 with a calibration count of 5 will use display `0, 2, 4, 6, 8, 10`
+- `no-popover` - turn off popover functionality
 
-Available slots:
+### Available slots:
+
 - `knob` - slot for replacing knob
+- `popover` - slot for replacing popover
 
 ### Overwrite Default Styles
 

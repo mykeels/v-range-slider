@@ -110,7 +110,7 @@ export default {
 
 <style>
   .slider {
-    width: 100%;
+    width: 50%;
   }
 
   .slider-small {

@@ -1,4 +1,4 @@
-# vue-range-slider
+# v-range-slider
 
 Simple slider component of Vue.js
 
@@ -17,20 +17,20 @@ Vue >= 2.0
 ### NPM
 
 ```bash
-npm install --save vue-range-slider
+npm install --save v-range-slider
 ```
 
 ### Yarn
 
 ```bash
-yarn add vue-range-slider
+yarn add v-range-slider
 ```
 
 ## Usage
 
 ### Basic Usage
 
-Just import vue-range-slider component and use it in your components. The props are compatible with native `input[type="range"]` element, so you can use `min`, `max`, `step` etc. like native element.
+Just import v-range-slider component and use it in your components. The props are compatible with native `input[type="range"]` element, so you can use `min`, `max`, `step` etc. like native element.
 
 ```html
 <template>
@@ -44,9 +44,9 @@ Just import vue-range-slider component and use it in your components. The props 
 </template>
 
 <script>
-import RangeSlider from 'vue-range-slider'
+import RangeSlider from 'v-range-slider'
 // you probably need to import built-in style
-import 'vue-range-slider/dist/vue-range-slider.css'
+import 'v-range-slider/dist/v-range-slider.css'
 
 export default {
   data () {
@@ -82,7 +82,7 @@ Available slots:
 
 ### Overwrite Default Styles
 
-vue-range-slider is built with Sass for its styling. If you want to customize vue-range-slider styles, you can easily do that by configuring Sass variables. Available variables can be seen in [the component file](src/RangeSlider.vue).
+v-range-slider is built with Sass for its styling. If you want to customize v-range-slider styles, you can easily do that by configuring Sass variables. Available variables can be seen in [the component file](src/RangeSlider.vue).
 
 Example of making the slider knob larger:
 
@@ -90,8 +90,8 @@ Example of making the slider knob larger:
 // set the variable of the knob size
 $knob-size: 30px;
 
-// import the built-in vue-range-slider style
-@import '~vue-range-slider/dist/vue-range-slider.scss';
+// import the built-in v-range-slider style
+@import '~v-range-slider/dist/v-range-slider.scss';
 ```
 
 ## License

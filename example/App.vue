@@ -89,7 +89,7 @@
 </template>
 
 <script>
-import RangeSlider from 'vue-range-slider'
+import RangeSlider from 'v-range-slider'
 
 export default {
   data () {

@@ -39,7 +39,7 @@
       :calibration-count="10">
     </range-slider>
     
-    <h4>Vue Range Slider with popover and calibration</h4>
+    <h4>Vue Range Slider with popover</h4>
     <range-slider
       class="slider slider-large"
       v-model="value"

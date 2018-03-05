@@ -49,8 +49,8 @@
       :step="step"
       :disabled="disabled"
       :no-calibration="true">
-      <template slot="popover">
-        <h4>${{Number(value || 0).toLocaleString('en')}}</h4>
+      <template slot="popover" scope="props">
+        <h4>{{props.min}} &lt;= ${{Number(props.value || 0).toLocaleString('en')}} &lt;= {{props.max}}</h4>
       </template>
     </range-slider>
 

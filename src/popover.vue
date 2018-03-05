@@ -19,6 +19,7 @@
         margin-left: -30px;
         border: 1px solid #21fb92;
         padding: 5px;
+        background: white;
     }
 
     .popover-container::before {

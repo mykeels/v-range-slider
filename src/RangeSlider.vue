@@ -249,6 +249,7 @@ $knob-shadow: 1px 1px rgba(0, 0, 0, 0.2) !default;
   box-shadow: $knob-shadow;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  z-index: 1;
 }
 
 .range-slider-calibration {

@@ -53,6 +53,21 @@
         <h4>{{props.min}} &lt;= ${{Number(props.value || 0).toLocaleString('en')}} &lt;= {{props.max}}</h4>
       </template>
     </range-slider>
+    
+    <h4>Vue Range Slider with popover and calibration</h4>
+    <range-slider
+      class="slider slider-large"
+      v-model="value"
+      :name="name"
+      :min="min"
+      :max="max"
+      :step="step"
+      :disabled="disabled"
+      :calibration-count="10">
+      <template slot="popover" scope="props">
+        <h4>{{props.min}} &lt;= ${{Number(props.value || 0).toLocaleString('en')}} &lt;= {{props.max}}</h4>
+      </template>
+    </range-slider>
 
     <div class="container">
       <div>

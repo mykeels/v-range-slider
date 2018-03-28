@@ -20,7 +20,7 @@
         <span class="range-slider-calibration" v-if="!noCalibration">
           <span class="calibration-item" v-for="offset in calibrationOffsets" :key="offset" :style="{ left: offset + '%' }">
             <div>|</div>
-            <span class="calibration-knob">{{(offset / 100 * (_max - _min)) + _min}}</span>
+            <span class="calibration-knob">{{((offset / 100 * (_max - _min)) + _min).toLocaleString('en')}}</span>
           </span>
         </span>
       </span>

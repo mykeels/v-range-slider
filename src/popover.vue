@@ -13,7 +13,7 @@
       },
       computed: {
         marginLeft () {
-          return this.percentValue <= 6 ? (this.percentValue / 6 * -30) : Math.min(-30, -30 - Math.floor(((this.percentValue - 75) || 0) / 25 * 140))
+          return this.percentValue <= 6 ? (this.percentValue / 6 * -30) : Math.min(-30, -30 - Math.floor(((this.percentValue - 75) || 0) / 25 * 120))
         }
       }
     }

@@ -1,6 +1,6 @@
 {
   "name": "v-range-slider",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "mykeels",
   "description": "Range slider component for Vue JS",
   "keywords": [

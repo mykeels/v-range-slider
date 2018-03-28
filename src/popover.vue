@@ -1,5 +1,5 @@
 <template>
-    <div id="popover-default" class="popover-container bottom">
+    <div id="popover-default" class="popover-container bottom" :style="{ 'margin-left': `${marginLeft}px` }">
         <div>
             <slot></slot>
         </div>
@@ -8,7 +8,14 @@
 
 <script>
     export default {
-        
+        props: {
+            'percentValue': Number
+        },
+        computed: {
+            marginLeft () {
+                return this.percentValue <= 6 ? (this.percentValue / 6 * -30) : Math.min(-30, -30 - Math.floor(((this.percentValue - 75) || 0) / 25 * 150))
+            }
+        }
     }
 </script>
 

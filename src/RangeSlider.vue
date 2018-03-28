@@ -11,7 +11,7 @@
         <span class="range-slider-fill" :style="{ width: valuePercent + '%' }"></span>
         <span class="range-slider-knob" :style="{ left: valuePercent + '%' }">
           <slot name="knob" :value="actualValue" :min="_min" :max="_max"></slot>
-          <popover v-if="!noPopover">
+          <popover :percent-value="valuePercent" v-if="!noPopover">
             <slot name="popover" :value="actualValue" :min="_min" :max="_max">
               <h4>{{actualValue}}</h4>
             </slot>

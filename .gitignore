@@ -1,6 +1,7 @@
 node_modules/
 *.log*
 .DS_Store
+/dist/
 /.tmp/
 /test/log/
 /example/__build__.js

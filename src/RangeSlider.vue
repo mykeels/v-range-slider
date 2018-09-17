@@ -158,7 +158,7 @@ export default {
 
     shiftKnob (e: Event) {
 
-      if (['range-slider', 'range-slider-inner', 'range-slider-fill'].some(c => e.path[0].classList.contains(c))) {
+      if (['range-slider', 'range-slider-inner', 'range-slider-fill', 'range-slider-rail'].some(c => e.path[0].classList.contains(c))) {
         const x = e.pageX - this.$refs.elem.offsetLeft
       
         const percent = Math.floor(x / this.$refs.elem.offsetWidth * 100)

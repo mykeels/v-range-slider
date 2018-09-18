@@ -1,6 +1,8 @@
 import assert from 'assert'
 import ExamplePage from '../pages/example'
 
+import app from '../../../example/App.vue'
+
 let page
 
 fixture`Example`
@@ -8,7 +10,7 @@ fixture`Example`
   .beforeEach(t => page = new ExamplePage(t))
 
 test('default value', async () => {
-  assert(await page.getSliderValue() === '50')
+  assert(await page.getSliderValue() === app.max)
   assert(await page.getValue() === '')
 })
 

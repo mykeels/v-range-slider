@@ -59,15 +59,15 @@ export default {
 
 - `name` - name of the slider input.
 - `value` - current value of the slider.
-- `disabled` - if true, the slider value cannot be updated.
+- `disabled` - if `true`, the slider value cannot be updated.
 - `min` - minimum value of the slider.
 - `max` - maximum value of the slider.
 - `step` - granularity of the slider value. e.g. if this is 3, the slider value will be 3, 6, 9, ...
 - `no-calibration` - turn off calibration
-- `calibration-count` - determines how steps to split calibration into e.g. a min of 0 and max of 10 with a calibration count of 5 will use display `0, 2, 4, 6, 8, 10`
+- `calibration-count` - determines how many steps to split calibration into e.g. a min of 0 and max of 10 with a calibration count of 5 will use display `0, 2, 4, 6, 8, 10`
 - `no-popover` - turn off popover functionality
 
-### Available slots:
+### Available slots
 
 - `knob` - slot for replacing knob
 - `popover` - slot for replacing popover
